@@ -1,0 +1,108 @@
+/* ================================
+   BOTONES
+   ================================ */
+.vet-primary-action {
+  background-color: #9b7fd4;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.vet-primary-action:hover {
+  background-color: #8a6ec3;
+}
+
+.vet-primary-action:focus-visible {
+  outline: 2px solid #9b7fd4;
+  outline-offset: 2px;
+}
+
+/* ================================
+   CARDS / SUPERFICIES
+   ================================ */
+.vet-surface {
+  border: 1px solid rgba(155, 127, 212, 0.15);
+  box-shadow: 0 1px 3px rgba(155, 127, 212, 0.06);
+  transition: box-shadow 0.15s ease;
+}
+
+.vet-surface:hover {
+  box-shadow: 0 4px 12px rgba(155, 127, 212, 0.12);
+}
+
+/* ================================
+   INPUTS / SELECTS / TEXTAREAS
+   ================================ */
+.vet-field {
+  background-color: #f0ebf8;
+  border: 1px solid rgba(155, 127, 212, 0.2);
+  color: #18122b;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vet-field::placeholder {
+  color: #7a6896;
+}
+
+.vet-field:focus {
+  border-color: #9b7fd4;
+  box-shadow: 0 0 0 2px rgba(155, 127, 212, 0.2);
+}
+
+/* ================================
+   BADGES DE ESTADO — RECETAS
+   ================================ */
+.badge-activa {
+  background-color: rgba(155, 127, 212, 0.12);
+  color: #7c5cbf;
+  border-color: rgba(155, 127, 212, 0.25);
+}
+
+.badge-completada {
+  background-color: rgba(155, 155, 155, 0.10);
+  color: #7a6896;
+  border-color: rgba(155, 155, 155, 0.2);
+}
+
+/* ================================
+   BADGES DE ESTADO — VENDEDORES
+   ================================ */
+.badge-activo {
+  background-color: rgba(82, 183, 136, 0.12);
+  color: #2d7a5b;
+  border-color: rgba(82, 183, 136, 0.25);
+}
+
+.badge-inactivo {
+  background-color: rgba(192, 57, 43, 0.10);
+  color: #c0392b;
+  border-color: rgba(192, 57, 43, 0.2);
+}
+
+/* ================================
+   PILLS DE MEDICAMENTOS — RECETAS
+   ================================ */
+.pill-med {
+  background-color: rgba(155, 127, 212, 0.10);
+  color: #7c5cbf;
+  border-radius: 9999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+}
+
+/* ================================
+   MINI STATS — RECETAS
+   ================================ */
+.stat-dot-activa   { background-color: #9b7fd4; }
+.stat-dot-mes      { background-color: #5b8dd9; }
+.stat-dot-completada { background-color: #52b788; }
+
+/* ================================
+   TABLA — HEADER
+   ================================ */
+.table-header-cell {
+  font-size: 0.75rem;
+  color: #7a6896;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
