@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# VetCare Admin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6) ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF)
 
-Currently, two official plugins are available:
+VetCare Admin is a web dashboard for a veterinary clinic. It allows you to manage sales, inventory, patients, prescriptions, and users with different roles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- General dashboard with key metrics
+- Product catalog with search and management
+- Sales tracking and transaction monitoring
+- Patient and prescription management
+- Roles and permissions for admin, salesperson, and veterinarian
+- Modern responsive navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+![Main dashboard view](public/captura2.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Main dashboard view](public/captura2.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Technologies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Recharts
+- Sonner
+- Lucide Icons
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Installation
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ▶️ Run in development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+The application is usually available at:
+
+```text
+http://localhost:5173
+```
+
+## 🧪 Available scripts
+
+```bash
+npm run build
+npm run lint
+npm run preview
+```
+
+## 🔐 Demo credentials
+
+The project uses simulated data for demonstration:
+
+- Admin: `admin@vetcare.com` / `admin123`
+- Salesperson: `vendedor@vetcare.com` / `vendedor123`
+- Veterinarian: `veterinario@vetcare.com` / `vet123`
+
+## 📁 Project structure
+
+- `src/app` — main pages, routes, and layout
+- `src/core` — authentication and business logic
+- `src/mocks` — simulated data
+- `src/types` — type definitions
+
+## 📝 Note
+
+This project is designed as a functional demo with local data and simulated authentication to showcase the administrative workflow.
+
